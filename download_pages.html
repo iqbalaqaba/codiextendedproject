@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Download Page</title>
+
+<!-- Import Script Start Here -->
+	<!-- Custom Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Import Script End Here -->
+
+<style>
+/* Common Style */
+	html,body{
+		background-color: #3f51b5;	
+		color: #FFFFF7;
+		font-family: 'Roboto';
+		font-weight: 300; 
+	}
+
+/* Typography */
+	a{
+		color: #ffffff;	
+	}
+
+	p{
+		font-size: 2em;
+	}
+
+/* Navbar */ 
+	.navbar{
+		font-weight: 500;
+		text-transform: uppercase;
+		color: #ffffff;
+		letter-spacing: 1.5px;
+		min-width: 80px;
+	}
+
+	.navbar-nav > li{
+  		margin-left:10px;
+	}
+
+/* Hamburger icon */
+	.navbar .navbar-toggle .icon-bar {
+    background-color: black;
+	}
+
+/* Button */
+
+	.btn-info{
+		background-color: #03a9f4;
+	}
+
+/* First Header */
+	.first-header{
+		background-color: white;
+		color:#333;
+		min-height: 450px;
+	}
+	.header{
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 2.5em;
+		margin-top: 50px;
+	}
+
+	.about{
+		font-weight: 300;
+		font-size: 1.5em;
+		color: #3f51b5;		
+	}
+
+/* Android Section */
+	.android{
+		background: #e96443; /* fallback for old browsers */
+			background: -webkit-linear-gradient(to left, #e96443 , #904e95); /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to left, #e96443 , #904e95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		min-height: 500px;	
+	}
+
+	.title-right{
+		font-size: 2em;
+	}
+
+	.about-right{
+		text-align: right;
+		font-size: 1.2em;
+		margin-bottom: 5px;
+	}
+
+	.title-left{
+		font-size: 2em;
+	}
+
+	.about-left{
+		text-align: left;
+		font-size: 1.2em;
+		margin-bottom: 5px;
+	}
+
+	.about-middle{
+		align-content: center;;
+		text-align: center;
+	}
+
+/* Android Section */
+	.ios{
+		background-color:  #03a9f4;
+		min-height: 500px;	
+		color: #212121;
+		font-family: 'Open Sans Condensed';
+		font-weight: 300;
+	}
+
+	.title-right{
+		font-size: 2em;
+	}
+
+	.about-right{
+		text-align: right;
+		font-size: 1.2em;
+	}
+
+	.title-left{
+		font-size: 2em;
+	}
+
+	.about-left{
+		text-align: left;
+		font-size: 1.2em;
+	}
+
+	.about-middle{
+		align-content: center;;
+		text-align: center;
+	}
+	.image-responsive{
+		margin: 0 auto !important;
+	}
+/* Footer Section */
+
+	.footer{
+		background-color: #3f51b5;		
+	}
+
+	.contact:hover{
+		color:white;
+		text-decoration: none;
+		font-weight: bolder;
+		transition: 0.2s;
+	}
+
+</style>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+
+<!-- Navbar 
+<div class="container-fluid">
+	<div class="col-lg-12">
+		<div class="container-fluid text-center">
+			<nav class="navbar">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle hidden-xs" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="#"> Danone CBS</a>
+			    </div>
+			    <div class="collapse navbar-collapse hidden-xs" id="myNavbar">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="active"><a href="#"> <strong> Homepage </strong> </a></li>
+			        <li><a href="#"> <strong> Page 2 </strong> </a></li>
+			        <li><a href="#"> <strong> Page 3 </strong></a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- Navbar End Here -->
+<!-- Header -->
+<div class="first-header">
+	<div class="row">
+		<div class="col-lg-12" style="padding-top:10px;">
+			<div class="col-lg-7">	
+				<img src="mockup.png" class="img-responsive center-block" alt="android_mockup" width="50%" height="50%"> 
+			</div>
+			<div class="col-lg-5"> 
+			<p class="header"> <strong> CODI Extended Apps </strong></p>
+			<p class="about"> Please click button below to download the Danone CODI Extended Application regarding to your mobile platform. <strong> Download speed may vary </strong> according to your internet connection speed.</p>
+			<!--<a href="#android" class="btn btn-info btn-lg" style="margin-top:10px; margin-bottom:10px;" role="button"> Android User Click Here </a> -->
+			<img src="google-play-badge.png" width="45%" height="45%">
+			<img src="apple.png" width="40%" height="40%">
+			<!-- <a href="#ios" class="btn btn-info btn-lg" style="margin-top:10px; margin-bottom:10px;" role="button"> iOS User Click Here </a> -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Header End Here -->
+<!-- Android Section -->
+<div class="android" id="android">
+	<p class="text-center" style="padding-top:20px;"> Our Feature in Android Apps. </p>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="col-lg-4 about-right"> 
+				<h1 class="title-right"> <strong>1.Home</strong> </h1>
+				<p class="about-right">We wants to make it easier for you to communicate, and to connect and manage all the features in this apps the way more simpler.  </p>
+				<h1 class="title-right"> <strong>2.Agenda </strong> </h1>
+				<p class="about-right"> Instead of merely being an old-fashioned calendar in digital form, Our apps have a features that prove how a powerful net-connected calendar can do so much more to keep you organized.</p>
+				<h1 class="title-right"> <strong>3.Logistic </strong> </h1>
+				<p class="about-right"> A instant access for the management of material, service and information flow in your hand.</p>
+			</div>
+			<div class="col-lg-4 about-middle">
+				 <img src="android.png" class="img-responsive center-block" alt="android_mockup" width="53%" height="53%"> 
+			</div>
+			<div class="col-lg-4 about-left">
+				<h1 class="title-left"> <strong>4.Who's Who </strong> </h1>
+				<p class="about-left"> It will be easier than ever to see more from the people you care about and simpler to share with exactly the right people using our Friend Lists feature.</p>
+				<h1 class="title-left"> <strong>5. Emergency Contact </strong> </h1>
+				<p class="about-left"> Our Emergency feature in this app help you manage urgent situations in the way more simpler.</p>
+				<h1 class="title-left"> <strong> #6 Material Download </strong> </h1>
+				<p class="about-left"> As Simple as That. You can easily find and download any file you want</p>				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Android Section Ends Here -->
+<!-- iOs Section -->
+<div class="ios" id="ios" style="background-color:#fafafa;">
+	<p class="text-center" style="padding-top:20px;"> Our Feature in Ios Platform. </p>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="col-lg-4 about-right"> 
+				<h1 class="title-right"> <strong>1.Home</strong> </h1>
+				<p class="about-right">We wants to make it easier for you to communicate, and to connect and manage all the features in this apps the way more simpler.  </p>
+				<h1 class="title-right"> <strong> 2.Agenda </strong> </h1>
+				<p class="about-right"> Instead of merely being an old-fashioned calendar in digital form, Our apps have a features that prove how a powerful net-connected calendar can do so much more to keep you organized.</p>
+				<h1 class="title-right"> <strong> 3.Logistic </strong> </h1>
+				<p class="about-right"> A instant access for the management of material, service and information flow in your hand.</p>
+			</div>
+			<div class="col-lg-4 about-middle">
+				<img src="iphone.png" class="img-responsive center-block" alt="ios_mockup" width="53%" height="53%" > 
+			</div>
+			<div class="col-lg-4 about-left">
+				<h1 class="title-left"> <strong> 4.Who's Who </strong> </h1>
+				<p class="about-left"> It will be easier than ever to see more from the people you care about and simpler to share with exactly the right people using our Friend Lists feature.</p>
+				<h1 class="title-left"> <strong> 5.Emergency Contact </strong> </h1>
+				<p class="about-left"> Our Emergency feature in this app help you manage urgent situations in the way more simpler.</p>
+				<h1 class="title-left"> <strong> 6.Material Download </strong> </h1>
+				<p class="about-left"> As Simple as That. You can easily find and download any file you want</p>				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- iOs Section Ends Here -->
+<!-- Footer Section -->
+<div class="footer" id="footer">
+	<div class="row"> 
+		<div class="col-lg-12 text-center">
+	 		<div class="col-lg-2"></div>
+	 		<div class="col-lg-8">
+	 		<h4> Please contact our technician number below if you find any problem related with your application !</h4>
+	 		<p class="contact"> <a class="contact" href="tel:+62717564517"> Call : +6271-7564517  </a></p>
+	 		</div>
+	 		<div class="col-lg-2"></div>
+		</div>
+	</div>
+</div>
+<!-- Footer Section End H8ere -->
+</body>
+<!--
+Change space between Navbar : http://stackoverflow.com/questions/20079782/changing-the-space-between-each-item-in-bootstrap-navbar
+Smooth Scroll : http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll & https://startbootstrap.com/template-overviews/scrolling-nav/
+-->
+</html>
